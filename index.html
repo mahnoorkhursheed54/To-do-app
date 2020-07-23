@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo application</title>
+</head>
+<style>
+    body{ 
+        background-image: url(https://i.pinimg.com/564x/ec/a3/f4/eca3f4395013d14bc815ecb9a756f1d3.jpg);
+        background-size: auto;
+        text-align: center;
+    }
+    .heading{
+        margin-top: 210px;
+        color: #eb2d76;
+        text-decoration: underline;
+        text-shadow: 2px 2px whitesmoke;
+    }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-container1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .input-text{
+        height:27px; 
+        font-size:12pt;
+        border-radius: 5px;
+        text-decoration: none;
+        width: 40%;
+        border: 1px solid rgba(192, 192, 192, 0.884);
+        transition: all 0.4s ease 0s;
+    }
+    .btn{
+        margin-left: 3px;
+        color: #fff !important;
+        text-decoration: none;
+        background: #eb2d76;
+        border-radius: 5px;
+        border: none;
+        transition: all 0.4s ease 0s;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    .btn1{
+        margin-left: 7px;
+        color: #fff !important;
+        text-decoration: none;
+        background: #eb2d76;
+        border-radius: 5px;
+        height: 30px;
+        border: none;
+        transition: all 0.4s ease 0s;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    .items{
+        font-size: 20pt;
+        color: #eb2d76;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1 class="heading">My To Do List</h1>
+    <div class="flex-container">
+        <input placeholder="Enter task" class="input-text" type="text" id="todo-item">
+        <button class="btn" onclick="addTodo()">ADD</button>
+        <button class="btn" onclick="deleteAll()">DELETE ALL</button>
+    </div>
+    <div class="flex-container1">
+        <ol class="items" id="list">
+
+        </ol>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
